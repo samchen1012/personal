@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人簡歷</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header no-print">
+    <div class="container header-inner">
+      <h1 class="logo">陳信宇</h1>
+      <nav class="nav">
+        <a href="#about">關於</a>
+        <a href="#experience">經歷</a>
+        <a href="#projects">專案</a>
+        <a href="#skills">技能</a>
+        <a href="#education">學歷</a>
+        <a href="#contact">聯絡</a>
+      </nav>
+      <div class="actions">
+        <button id="themeToggle" aria-label="切換主題">切換主題</button>
+        <button id="printBtn" aria-label="列印簡歷">列印</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <img class="avatar" src="https://via.placeholder.com/150" alt="大頭照">
+        <div class="intro">
+          <h2 class="name">陳信宇</h2>
+          <p class="title">醫資一 • 學號：414570526</p>
+          <p class="contact-line">
+            <a href="mailto:chen.shin.yu@example.com">chen.shin.yu@example.com</a> • <a href="tel:+886912345678">+886 912 345 678</a>
+          </p>
+          <p class="location">台灣 • Taipei • GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h3>關於我</h3>
+      <p>我是一名醫務資訊相關背景的學生，具備網頁前端與基礎後端知識。熱衷於以介面改善使用者操作流程、將資料轉化為可視化資訊，並持續學習 Git 與專案協作流程。</p>
+    </section>
+
+    <section id="experience" class="card">
+      <h3>學歷</h3>
+      <ol class="timeline">
+        <li>
+          <h4>輔仁大學</h4>
+          <p class="meta">2023 — 現在</p>
+          <p>醫務資訊學系（醫資一）。目前就讀，主修醫療資訊系統與網頁開發。</p>
+        </li>
+        <li>
+          <h4>華江高中</h4>
+          <p class="meta">2020 — 2023</p>
+          <p>高中階段就讀，奠定資訊與理科基礎。</p>
+        </li>
+        <li>
+          <h4>海山國中</h4>
+          <p class="meta">2017 — 2020</p>
+          <p>國中階段就讀，培養學習興趣與基礎知識。</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>作品集</h3>
+      
+      <div class="project-category">
+        <h4 class="category-title">🌐 前端網頁</h4>
+        <div class="grid">
+          <article class="project">
+            <h5>個人簡歷網站</h5>
+            <p>本作品：單頁響應式簡歷，含列印友善樣式與主題切換。</p>
+            <p class="meta">技術：HTML / CSS / JavaScript • <a href="https://github.com/your-username/resume" target="_blank" rel="noopener">Repo</a></p>
+          </article>
+        </div>
+      </div>
+
+      <div class="project-category">
+        <h4 class="category-title">⚙️ JavaScript 互動</h4>
+        <div class="grid">
+          <article class="project">
+            <h5>課程作業：互動表單</h5>
+            <p>使用表單驗證與基本 DOM 操作，範例頁面與 demo。</p>
+            <p class="meta">技術：JavaScript • <a href="https://github.com/your-username/form-demo" target="_blank" rel="noopener">Repo</a></p>
+          </article>
+        </div>
+      </div>
+
+      <div class="project-category">
+        <h4 class="category-title">📊 資料視覺化</h4>
+        <div class="grid">
+          <article class="project">
+            <h5>資料視覺化小工具</h5>
+            <p>簡單的資料圖表與篩選功能，用於展示實驗室資料。</p>
+            <p class="meta">技術：Chart.js / D3 (範例) • <a href="https://github.com/your-username/chart-demo" target="_blank" rel="noopener">Repo</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h3>技能</h3>
+      <div class="skill-list">
+        <div class="skill">
+          <div class="skill-title">HTML / CSS</div>
+          <div class="progress"><div class="progress-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">JavaScript</div>
+          <div class="progress"><div class="progress-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Git / GitHub</div>
+          <div class="progress"><div class="progress-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h3>學歷</h3>
+      <p>學校名稱 — 學位 （年份）</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>聯絡我</h3>
+      <form id="contactForm" class="contact-form" onsubmit="return false;">
+        <label>姓名<input type="text" id="cname" placeholder="你的名字"></label>
+        <label>電子郵件<input type="email" id="cemail" placeholder="you@example.com"></label>
+        <label>訊息<textarea id="cmessage" rows="4" placeholder="想說的話..."></textarea></label>
+        <div class="form-actions no-print">
+          <button id="sendBtn">模擬送出</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="github-pages" class="card">
+      <h3>Git/GitHub 與 Pages</h3>
+      <p>班級：醫資一 • 學號：414570526 • 姓名：陳信宇</p>
+      <p>完成後 Pages 網址填入下方：</p>
+      <p><strong>我的 GitHub Pages 網址：</strong> ___________________________</p>
+      <p><strong>我的 Repo 連結：</strong> ___________________________</p>
+      <h4>學習心得（150-300 字）</h4>
+      <p class="learn-area">請在此撰寫你這次作業的學習內容，例如：使用 Copilot 的體驗、在 Git 分支 / PR / revert 過程中的收穫、網站製作心得等。</p>
+    </section>
+
+    <section id="checklist" class="card no-print">
+      <h3>自我檢核表（列印後可勾選）</h3>
+      <ul class="checklist">
+        <li><input type="checkbox"> 已完成個人資訊區塊（姓名 / 照片 / Email / 其他聯絡方式）</li>
+        <li><input type="checkbox"> 已完成技能展示（至少 3 個技能）</li>
+        <li><input type="checkbox"> 已完成工作/學習經歷（至少 3 則事件）</li>
+        <li><input type="checkbox"> 已完成作品集（卡片式、至少 3 項並有連結）</li>
+        <li><input type="checkbox"> 網頁有 meta viewport，手機顯示正常</li>
+        <li><input type="checkbox"> 有平滑滾動與至少一項 hover/動畫效果</li>
+        <li><input type="checkbox"> 列印樣式可將頁面匯出為 PDF</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer no-print">
+    <div class="container">
+      <p>© 2025 你的名字 — 匯出或列印以產生 PDF 簡歷</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
