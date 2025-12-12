@@ -1,0 +1,13 @@
+:root{--bg:#f7faf9;--card:#ffffff;--accent:#0ea5a4;--text:#042027;--border:rgba(4,32,39,0.06)}
+*{box-sizing:border-box}
+body{font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',Arial;margin:0;background:var(--bg);color:var(--text);}
+.calc-wrap{max-width:520px;margin:40px auto;padding:20px}
+h1{margin:0 0 12px 0;font-size:1.4rem;color:var(--accent)}
+.calculator{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(4,32,39,0.06);border:1px solid var(--border)}
+.display{height:64px;background:#eef6f6;border-radius:8px;padding:12px;font-size:1.6rem;display:flex;align-items:center;justify-content:flex-end;overflow:hidden}
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+button{padding:14px 8px;font-size:1rem;border-radius:8px;border:1px solid var(--border);background:white;cursor:pointer}
+button:hover{transform:translateY(-2px)}
+.wide{grid-column:span 2}
+.notes{color:#556; font-size:0.95rem}
+@media(max-width:520px){.calc-wrap{margin:20px;padding:12px}.display{height:56px;font-size:1.2rem}}

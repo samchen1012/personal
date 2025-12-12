@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>個人簡歷</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,12 +28,12 @@
   <main class="container">
     <section class="hero">
       <div class="hero-inner">
-        <img class="avatar" src="https://via.placeholder.com/150" alt="大頭照">
+        <img class="avatar" src="大頭照.jpg" alt="大頭照">
         <div class="intro">
           <h2 class="name">陳信宇</h2>
           <p class="title">醫資一 • 學號：414570526</p>
           <p class="contact-line">
-            <a href="mailto:chen.shin.yu@example.com">chen.shin.yu@example.com</a> • <a href="tel:+886912345678">+886 912 345 678</a>
+            <a href="mailto:414570526@m365.fju.edu.tw">414570526@m365.fju.edu.tw</a> • <a href="tel:0933851651">0933851651</a>
           </p>
           <p class="location">台灣 • Taipei • GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">your-username</a></p>
         </div>
@@ -50,17 +50,17 @@
       <ol class="timeline">
         <li>
           <h4>輔仁大學</h4>
-          <p class="meta">2023 — 現在</p>
+          <p class="meta">2025 — 現在</p>
           <p>醫務資訊學系（醫資一）。目前就讀，主修醫療資訊系統與網頁開發。</p>
         </li>
         <li>
           <h4>華江高中</h4>
-          <p class="meta">2020 — 2023</p>
+          <p class="meta">2022 — 2025</p>
           <p>高中階段就讀，奠定資訊與理科基礎。</p>
         </li>
         <li>
           <h4>海山國中</h4>
-          <p class="meta">2017 — 2020</p>
+          <p class="meta">2019 — 2022</p>
           <p>國中階段就讀，培養學習興趣與基礎知識。</p>
         </li>
       </ol>
@@ -70,34 +70,38 @@
       <h3>作品集</h3>
       
       <div class="project-category">
-        <h4 class="category-title">🌐 前端網頁</h4>
+        <h4 class="category-title">作品一</h4>
         <div class="grid">
           <article class="project">
-            <h5>個人簡歷網站</h5>
-            <p>本作品：單頁響應式簡歷，含列印友善樣式與主題切換。</p>
-            <p class="meta">技術：HTML / CSS / JavaScript • <a href="https://github.com/your-username/resume" target="_blank" rel="noopener">Repo</a></p>
+            <h5>高中數學專題與 TMT 檢定</h5>
+            <div class="project-media">
+              <img src="tmt_page.jpg" alt="TMT 考試須知" class="project-img">
+              <img src="tmt_cert.jpg" alt="TMT 參加證書" class="project-img">
+            </div>
+            <p>高中時選了理組並在高二選了數學專題，期間參加了 TMT 數學能力檢定考試（TMT11A），透過專題與檢定強化數理邏輯與題目解題技巧。</p>
+            <p class="meta">技術/工具：資料整理、題目分析 • 圖片檔請命名為 <code>tmt_page.jpg</code> 與 <code>tmt_cert.jpg</code> 並放在同一目錄。</p>
           </article>
         </div>
       </div>
 
       <div class="project-category">
-        <h4 class="category-title">⚙️ JavaScript 互動</h4>
+        <h4 class="category-title">作品二</h4>
         <div class="grid">
           <article class="project">
-            <h5>課程作業：互動表單</h5>
-            <p>使用表單驗證與基本 DOM 操作，範例頁面與 demo。</p>
-            <p class="meta">技術：JavaScript • <a href="https://github.com/your-username/form-demo" target="_blank" rel="noopener">Repo</a></p>
+            <h5>計算機專案</h5>
+            <p>一個支援基本四則運算、括號與小數點的網頁計算機。包含按鈕與鍵盤輸入、結果顯示與簡單錯誤處理，適合作為練習 DOM 與事件處理的作品。</p>
+            <p class="meta">技術：HTML / CSS / JavaScript • <a href="calculator.html" target="_blank" rel="noopener">線上 Demo</a> • <a href="https://github.com/your-username/calculator" target="_blank" rel="noopener">Repo</a></p>
           </article>
         </div>
       </div>
 
       <div class="project-category">
-        <h4 class="category-title">📊 資料視覺化</h4>
+        <h4 class="category-title">作品三</h4>
         <div class="grid">
           <article class="project">
-            <h5>資料視覺化小工具</h5>
-            <p>簡單的資料圖表與篩選功能，用於展示實驗室資料。</p>
-            <p class="meta">技術：Chart.js / D3 (範例) • <a href="https://github.com/your-username/chart-demo" target="_blank" rel="noopener">Repo</a></p>
+            <h5>高中物理實作 — 大氣壓力</h5>
+            <p>高中學習歷程中進行的大氣壓力實驗，紀錄了實驗步驟、觀察結果與分析，為理科實作報告的一部分。</p>
+            <p class="meta">檔案：<a href="物理實作-大氣壓力.pdf" target="_blank" rel="noopener">下載 PDF（物理實作-大氣壓力.pdf）</a></p>
           </article>
         </div>
       </div>
@@ -129,8 +133,8 @@
     <section id="contact" class="card">
       <h3>聯絡我</h3>
       <form id="contactForm" class="contact-form" onsubmit="return false;">
-        <label>姓名<input type="text" id="cname" placeholder="你的名字"></label>
-        <label>電子郵件<input type="email" id="cemail" placeholder="you@example.com"></label>
+        <label>姓名<input type="text" id="cname" placeholder="你的名字" value="陳信宇"></label>
+        <label>電子郵件<input type="email" id="cemail" placeholder="you@example.com" value="414570526@m365.fju.edu.tw"></label>
         <label>訊息<textarea id="cmessage" rows="4" placeholder="想說的話..."></textarea></label>
         <div class="form-actions no-print">
           <button id="sendBtn">模擬送出</button>
